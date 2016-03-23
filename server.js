@@ -6,7 +6,7 @@ var routes = require('./app/routes/index.js');
 
 var app = express();
 
-mongo.connect('mongodb://localhost:27017/clementinejs', function (err, db) {
+mongo.connect( "mongodb://heroku_6bfrssl5:grs7rom5p1fk1otom1p8pnrli2@ds021979.mlab.com:21979/heroku_6bfrssl5", function (err, db) {
 
    if (err) {
       throw new Error('Database failed to connect!');
